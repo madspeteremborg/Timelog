@@ -15,6 +15,7 @@ import dk.embo.madspeter.timelog.database.DBHelper;
 
 public class DisplayTimelog extends Activity {
 
+    /* comment */
     private TextView mProject;
     private TextView mDate;
     private TextView mTime;
