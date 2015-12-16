@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dk.embo.madspeter.timelog" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ListTimelog"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayTimelog"
+            android:label="@string/title_activity_display_timelog"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ListTimelog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dk.embo.madspeter.timelog.ListTimelog" />
+        </activity>
+        <activity
+            android:name=".EditTimelog"
+            android:label="@string/title_activity_edit_timelog"
+            android:parentActivityName=".DisplayTimelog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dk.embo.madspeter.timelog.DisplayTimelog" />
+        </activity>
+        <provider
+            android:authorities="dk.embo.madspeter.timelog"
+            android:name=".contentprovider.TimelogContentProvider" >
+        </provider>
+    </application>
+
+</manifest>

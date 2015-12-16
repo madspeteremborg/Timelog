@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Timelog</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit_project">Edit</string>
+    <string name="action_add_project">Tilføj Project</string>
+    <string name="title_activity_display_log">DisplayLog</string>
+    <string name="title_activity_edit_timelog">EditTimelog</string>
+    <string name="title_activity_display_timelog">DisplayTimelog</string>
+    <string name="header_timelog_date">Dato:</string>
+    <string name="header_timelog_project">Project:</string>
+    <string name="header_timelog_time">Tidsrum:</string>
+    <string name="header_timelog_note">Note:</string>
+    <string name="hint_timelog_date">dd.mm.yyyy</string>
+    <string name="hint_timelog_project">project</string>
+    <string name="hint_timelog_time">tidsrum</string>
+    <string name="hint_timelog_note">note</string>
+    <string name="button_save">Gem</string>
+    <string name="button_cancel">Annuller</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

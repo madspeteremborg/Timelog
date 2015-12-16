@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dk.embo.madspeter.timelog.DisplayTimelog" >
+    <item android:id="@+id/edit_timelog"
+        android:title="@string/action_edit_project"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" />
+</menu>
