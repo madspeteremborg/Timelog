@@ -1,11 +1,14 @@
 package dk.embo.madspeter.timelog;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class EditTimelog extends Activity {
@@ -23,6 +26,8 @@ public class EditTimelog extends Activity {
             String str = extras.getString("project");
             editProject.setText(str);
         }
+
+
     }
 
 
@@ -45,7 +50,13 @@ public class EditTimelog extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void saveProject(View view){
+    public void saveProject(View view) {
 
+        Context context = getApplicationContext();
+        CharSequence text = "Hello toast!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 }
